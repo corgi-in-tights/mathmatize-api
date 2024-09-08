@@ -17,9 +17,12 @@ class MathMatizeAPI:
         self._sign_in(email, password)
 
     def _setup_web_driver(self, chromedriver_path):
-        self.service = Service(chromedriver_path)
-        self.service.start()
-        self.driver = webdriver.Chrome(service=self.service)
+        if (chromedriver_path):
+            self.service = Service(chromedriver_path)
+            self.service.start()
+            self.driver = webdriver.Chrome(service=self.service)
+        else:
+            self.driver = webdriver.Chrome()
 
     def _sign_in(self, email, password):
         self.driver.get('https://www.mathmatize.com/account/')

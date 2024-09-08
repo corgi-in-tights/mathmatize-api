@@ -167,3 +167,4 @@ cython_debug/
 # VSCode
 .vscode/settings.json
 
+*.dev_example.py

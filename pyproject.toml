@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mathmatize-ping"
+name = "mathmatize-api"
 version = "0.1.0"
 description = ""
 authors = ["corgi-in-tights <59304120+corgi-in-tights@users.noreply.github.com>"]
